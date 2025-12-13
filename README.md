@@ -1,3 +1,10 @@
+# Deploy to Netlify
+- Push to github
+- open netlify & login with github
+- add project from repo github
+- jika belum ada maka klik tombol dari netlify nya untuk menambahkan repo yang mau ditambahkan
+- deploy success
+
 # Solid - Free Next.js Web Template and Starter Kit for SaaS
 
 Solid is a free Next.js template specifically crafted for startups, SaaS, and software websites. It provides an extensive array of necessary sections, elements, and pages required to build a fully-equipped website for any SaaS, software, or startup site. Comes with all cutting edge React and Next.js features - **Built with Next.js 13, React 18 and TypeScript.**

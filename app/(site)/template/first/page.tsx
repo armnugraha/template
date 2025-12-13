@@ -747,7 +747,7 @@ const TemplateFirstPage = () => {
                 </div>
 
                 <div className="relative pt-4">
-                   <textarea rows="4" className="peer w-full border-b border-slate-300 py-3 text-slate-700 focus:outline-none focus:border-emerald-600 transition-colors placeholder-transparent" id="msg" placeholder="Pesan"></textarea>
+                   <textarea rows={4} className="peer w-full border-b border-slate-300 py-3 text-slate-700 focus:outline-none focus:border-emerald-600 transition-colors placeholder-transparent" id="msg" placeholder="Pesan"></textarea>
                    <label htmlFor="msg" className="absolute left-0 top-0.5 text-xs text-slate-400 transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-slate-400 peer-placeholder-shown:top-7 peer-focus:top-0.5 peer-focus:text-xs peer-focus:text-emerald-600">Ceritakan Impian Anda</label>
                 </div>
 

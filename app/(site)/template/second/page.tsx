@@ -778,7 +778,7 @@ const TemplateSecondPage = () => {
                 </div>
 
                 <div className="relative">
-                   <textarea rows="4" className="w-full bg-stone-50 border border-stone-200 rounded-2xl px-6 py-4 text-stone-700 focus:outline-none focus:border-emerald-600 transition-colors" placeholder="Ceritakan impian pernikahan Anda..."></textarea>
+                   <textarea rows={4} className="w-full bg-stone-50 border border-stone-200 rounded-2xl px-6 py-4 text-stone-700 focus:outline-none focus:border-emerald-600 transition-colors" placeholder="Ceritakan impian pernikahan Anda..."></textarea>
                 </div>
 
                 <button type="button" className="px-10 py-5 bg-emerald-900 rounded-xl text-white font-bold hover:bg-emerald-800 transition-colors w-full md:w-auto">

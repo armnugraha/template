@@ -786,7 +786,7 @@ const TemplateThirdPage = () => {
 
                 <div>
                    <label className="block text-stone-400 text-sm mb-2">Ceritakan Rencana Anda</label>
-                   <textarea rows="4" className="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-rose-500 transition-colors" placeholder="Lokasi, tema impian, estimasi tamu..."></textarea>
+                   <textarea rows={4} className="w-full bg-stone-800 border border-stone-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-rose-500 transition-colors" placeholder="Lokasi, tema impian, estimasi tamu..."></textarea>
                 </div>
 
                 <button type="button" className="w-full bg-rose-500 hover:bg-rose-600 text-white font-bold py-4 rounded-lg transition-colors">
