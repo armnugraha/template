@@ -25,6 +25,14 @@ import {
   Flower2
 } from 'lucide-react';
 
+interface Package {
+  id: number;
+  name: string;
+  price: number;
+  desc: string;
+  features: string[];
+}
+
 const TemplateThirdPage = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -34,7 +42,7 @@ const TemplateThirdPage = () => {
 
   // State untuk Products Section
   const [activeCategory, setActiveCategory] = useState('wedding');
-  const [selectedPackage, setSelectedPackage] = useState(null);
+  const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
 
   // Format Currency IDR
   const formatIDR = (value) => {
@@ -582,7 +590,7 @@ const TemplateThirdPage = () => {
               <div className="sticky top-0 bg-white p-6 border-b border-stone-100 flex justify-between items-center z-10">
                 <div>
                    <span className="text-rose-500 text-sm font-bold uppercase tracking-widest">{productData[activeCategory].title} Package</span>
-                   <h3 className="text-2xl font-serif font-bold text-stone-800">{selectedPackage?.name}</h3>
+                   <h3 className="text-2xl font-serif font-bold text-stone-800">{selectedPackage.name}</h3>
                 </div>
                 <button 
                   onClick={() => setSelectedPackage(null)}
@@ -594,7 +602,7 @@ const TemplateThirdPage = () => {
               
               <div className="p-8">
                 <div className="flex items-end gap-2 mb-8">
-                   <h2 className="text-4xl font-bold text-rose-500">{formatIDR(selectedPackage?.price)}</h2>
+                   <h2 className="text-4xl font-bold text-rose-500">{formatIDR(selectedPackage.price)}</h2>
                    <span className="text-stone-400 mb-2">/ nett</span>
                 </div>
 
@@ -604,7 +612,7 @@ const TemplateThirdPage = () => {
                      Apa yang Anda dapatkan:
                    </h4>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {selectedPackage?.features?.map((feature, idx) => (
+                      {selectedPackage.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3">
                           <CheckCircle className="text-green-500 shrink-0 mt-0.5" size={18} />
                           <span className="text-stone-700 text-sm">{feature}</span>

@@ -30,7 +30,7 @@ const TemplateSecondPage = () => {
 
   // State untuk Products Section
   const [activeCategory, setActiveCategory] = useState('wedding');
-  const [selectedPackage, setSelectedPackage] = useState(null);
+  const [selectedPackage, setSelectedPackage] = useState<typeof productData['wedding']['packages'][0] | null>(null);
 
   // Format Currency IDR
   const formatIDR = (value) => {
@@ -608,7 +608,7 @@ const TemplateSecondPage = () => {
             >
               {/* Image Header in Modal */}
               <div className="h-48 relative">
-                <img src={selectedPackage?.image} className="w-full h-full object-cover" alt="header"/>
+                <img src={selectedPackage.image} className="w-full h-full object-cover" alt="header"/>
                 <button 
                   onClick={() => setSelectedPackage(null)}
                   className="absolute top-6 right-6 w-10 h-10 bg-white/50 backdrop-blur-md rounded-full flex items-center justify-center hover:bg-white text-stone-800 transition-colors"
@@ -620,9 +620,9 @@ const TemplateSecondPage = () => {
 
               <div className="px-10 pb-10 -mt-10 relative">
                 <span className="bg-emerald-100 text-emerald-800 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">{productData[activeCategory].title}</span>
-                <h3 className="text-3xl font-serif font-bold text-emerald-950 mb-2">{selectedPackage?.name}</h3>
+                <h3 className="text-3xl font-serif font-bold text-emerald-950 mb-2">{selectedPackage.name}</h3>
                 <div className="flex items-end gap-2 mb-8">
-                   <h2 className="text-4xl font-bold text-emerald-600">{formatIDR(selectedPackage?.price)}</h2>
+                   <h2 className="text-4xl font-bold text-emerald-600">{formatIDR(selectedPackage.price)}</h2>
                    <span className="text-stone-400 mb-2 font-medium">/ nett</span>
                 </div>
 
@@ -632,7 +632,7 @@ const TemplateSecondPage = () => {
                      Apa yang Anda dapatkan:
                    </h4>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-6">
-                      {selectedPackage?.features?.map((feature, idx) => (
+                      {selectedPackage.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3">
                           <CheckCircle className="text-emerald-500 shrink-0 mt-0.5" size={18} />
                           <span className="text-stone-600 font-medium">{feature}</span>

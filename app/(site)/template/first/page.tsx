@@ -40,7 +40,7 @@ const TemplateFirstPage = () => {
 
   // State untuk Products Section
   const [activeCategory, setActiveCategory] = useState('wedding');
-  const [selectedPackage, setSelectedPackage] = useState(null);
+  const [selectedPackage, setSelectedPackage] = useState<{id: number; name: string; price: number; desc: string; features: string[]} | null>(null);
 
   // Format Currency IDR
   const formatIDR = (value) => {
@@ -517,16 +517,16 @@ const TemplateFirstPage = () => {
                     </div>
                   </div>
 
-                  <h3 className="text-xl font-medium text-emerald-950 mb-3">{pkg?.name}</h3>
-                  <p className="text-slate-500 text-sm mb-8 font-light line-clamp-2 min-h-[40px]">{pkg?.desc}</p>
+                  <h3 className="text-xl font-medium text-emerald-950 mb-3">{pkg.name}</h3>
+                  <p className="text-slate-500 text-sm mb-8 font-light line-clamp-2 min-h-[40px]">{pkg.desc}</p>
                   
                   <div className="mb-8 pb-8 border-b border-slate-200">
                     <span className="text-xs text-slate-400 uppercase tracking-widest">Mulai Dari</span>
-                    <div className="text-2xl font-light text-emerald-800 mt-1">{formatIDR(pkg?.price)}</div>
+                    <div className="text-2xl font-light text-emerald-800 mt-1">{formatIDR(pkg.price)}</div>
                   </div>
 
                   <ul className="space-y-4 mb-10">
-                    {pkg?.features.slice(0, 3).map((feat, idx) => (
+                    {pkg.features.slice(0, 3).map((feat, idx) => (
                       <li key={idx} className="flex items-center text-sm text-slate-600 font-light">
                         <div className="w-1.5 h-1.5 bg-amber-400 mr-3 rounded-full"></div>
                         {feat}
@@ -567,8 +567,8 @@ const TemplateFirstPage = () => {
             >
               <div className="sticky top-0 bg-white p-8 border-b border-slate-100 flex justify-between items-center z-10">
                 <div>
-                   <span className="text-amber-500 text-xs font-bold uppercase tracking-widest">{productData[activeCategory]?.title}</span>
-                   <h3 className="text-2xl font-light text-emerald-950 mt-1">{selectedPackage?.name}</h3>
+                   <span className="text-amber-500 text-xs font-bold uppercase tracking-widest">{productData[activeCategory].title}</span>
+                   <h3 className="text-2xl font-light text-emerald-950 mt-1">{selectedPackage.name}</h3>
                 </div>
                 <button 
                   onClick={() => setSelectedPackage(null)}
@@ -580,7 +580,7 @@ const TemplateFirstPage = () => {
               
               <div className="p-8">
                 <div className="flex items-end gap-2 mb-10">
-                   <h2 className="text-4xl font-light text-emerald-700">{formatIDR(selectedPackage?.price)}</h2>
+                   <h2 className="text-4xl font-light text-emerald-700">{formatIDR(selectedPackage.price)}</h2>
                    <span className="text-slate-400 mb-2 text-sm font-light">/ nett</span>
                 </div>
 
@@ -590,7 +590,7 @@ const TemplateFirstPage = () => {
                      Inklusi Paket
                    </h4>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 gap-x-8">
-                      {selectedPackage?.features?.map((feature, idx) => (
+                      {selectedPackage.features.map((feature, idx) => (
                         <div key={idx} className="flex items-start gap-3">
                           <CheckCircle className="text-emerald-500 shrink-0 mt-0.5" size={16} />
                           <span className="text-slate-600 text-sm font-light">{feature}</span>
