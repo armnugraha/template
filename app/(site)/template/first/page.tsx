@@ -631,7 +631,7 @@ const TemplateFirstPage = () => {
             {/* Gallery images updated to muted tones/grayscale to hover color */}
             <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1519225448526-0ca85c53563e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="https://cdn.myportfolio.com/c91db301-39a7-4953-8970-ebcad31bf14d/88e9fb21-7ec1-4e96-a6e5-8ab094145049.JPG?h=a0b81cea9d33b9bff2a88dbcfa10b173" 
                 alt="Wedding 1" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
               />
@@ -642,7 +642,7 @@ const TemplateFirstPage = () => {
             
             <div className="md:col-span-1 md:row-span-1 relative group overflow-hidden">
                <img 
-                src="https://images.unsplash.com/photo-1520342868574-5fa3804e551c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="https://cdn.myportfolio.com/c91db301-39a7-4953-8970-ebcad31bf14d/ada40c61-0ee4-48d2-ae31-440a0d297165.JPG?h=91fbbe5e00e88ee62ab7430f076ab253" 
                 alt="Wedding 2" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
               />
@@ -653,7 +653,7 @@ const TemplateFirstPage = () => {
 
             <div className="md:col-span-1 md:row-span-2 relative group overflow-hidden">
                <img 
-                src="https://images.unsplash.com/photo-1522673607200-1645062cd958?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="https://cdn.myportfolio.com/c91db301-39a7-4953-8970-ebcad31bf14d/64431b52-1376-4222-b226-231a934f938f.JPG?h=e1f51e483c784472b42faeb3429f3099" 
                 alt="Wedding 3" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
               />
@@ -664,7 +664,7 @@ const TemplateFirstPage = () => {
 
             <div className="md:col-span-1 md:row-span-1 relative group overflow-hidden">
                <img 
-                src="https://images.unsplash.com/photo-1507504031981-a2368c6e1919?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="https://cdn.myportfolio.com/c91db301-39a7-4953-8970-ebcad31bf14d/d10d4fd2-3e4a-42cf-89a6-c19da928066b.JPG?h=87b4b5557d8f5b17906572c725940d75" 
                 alt="Wedding 4" 
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" 
               />
