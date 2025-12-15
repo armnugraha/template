@@ -185,7 +185,7 @@ const TemplateThirdPage = () => {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
         <div className="container mx-auto px-6 flex justify-between items-center">
           <div className={`text-2xl font-serif font-bold tracking-widest ${scrolled ? 'text-stone-800' : 'text-stone-800 md:text-white'}`}>
-            ASMARA<span className="text-rose-400">.</span>
+            Noora<span className="text-rose-400">.</span>
           </div>
 
           {/* Desktop Menu */}
@@ -321,7 +321,7 @@ const TemplateThirdPage = () => {
               <h4 className="text-rose-500 font-bold uppercase tracking-widest text-sm">Tentang Kami</h4>
               <h2 className="text-4xl font-serif font-bold text-stone-800">Merancang Kebahagiaan Sejak 2014</h2>
               <p className="text-stone-600 leading-relaxed text-lg">
-                Asmara Wedding Planner bukan sekadar penyelenggara acara. Kami adalah sahabat Anda dalam merencanakan hari paling bersejarah. Filosofi kami sederhana: **"Detail adalah Kunci"**.
+                Noora Wedding Planner bukan sekadar penyelenggara acara. Kami adalah sahabat Anda dalam merencanakan hari paling bersejarah. Filosofi kami sederhana: **"Detail adalah Kunci"**.
               </p>
               <p className="text-stone-600 leading-relaxed">
                 Dari pemilihan bunga terkecil hingga pencahayaan panggung yang megah, tim kami memastikan setiap aspek mencerminkan kepribadian Anda dan pasangan.
@@ -720,7 +720,7 @@ const TemplateThirdPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Putri & Dimas", date: "Januari 2024", text: "Tidak menyangka pernikahan impian kami bisa terwujud seindah ini. Tim Asmara sangat detail dan responsif. Terima kasih!" },
+              { name: "Putri & Dimas", date: "Januari 2024", text: "Tidak menyangka pernikahan impian kami bisa terwujud seindah ini. Tim Noora sangat detail dan responsif. Terima kasih!" },
               { name: "Sarah & John", date: "Desember 2023", text: "The best decision we made for our wedding. Professional, creative, and very calm under pressure." },
               { name: "Rina & Bayu", date: "November 2023", text: "Dekorasinya luar biasa, makanannya enak, dan flow acara sangat rapi. Keluarga besar kami sangat puas." },
             ].map((testi, idx) => (
@@ -810,7 +810,7 @@ const TemplateThirdPage = () => {
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail className="shrink-0" />
-                    <p className="opacity-90">hello@asmarawedding.com</p>
+                    <p className="opacity-90">hello@Noorawedding.com</p>
                   </div>
                 </div>
               </div>
@@ -835,11 +835,11 @@ const TemplateThirdPage = () => {
       {/* --- FOOTER --- */}
       <footer className="bg-stone-950 text-stone-400 py-12 border-t border-stone-900">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-serif font-bold text-white mb-4">ASMARA.</h2>
+          <h2 className="text-2xl font-serif font-bold text-white mb-4">Noora.</h2>
           <p className="mb-8 max-w-md mx-auto text-sm">Mewujudkan pernikahan impian dengan sentuhan personal dan elegan.</p>
           
           <div className="border-t border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
-            <p>&copy; 2024 Asmara Wedding Planner. All rights reserved.</p>
+            <p>&copy; 2024 Noora Wedding Planner. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="hover:text-white">Privacy Policy</a>
               <a href="#" className="hover:text-white">Terms of Service</a>

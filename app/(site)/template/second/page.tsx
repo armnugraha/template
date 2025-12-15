@@ -182,7 +182,7 @@ const TemplateSecondPage = () => {
         <div className="container mx-auto px-6 flex justify-between items-center">
           {/* Logo updated: Font serif yang lebih berkarakter */}
           <div className={`text-3xl font-serif font-bold italic tracking-wide ${scrolled ? 'text-emerald-900' : 'text-emerald-900 md:text-white'}`}>
-            Asmara<span className="text-amber-400 font-sans not-italic">.</span>
+            Noora<span className="text-amber-400 font-sans not-italic">.</span>
           </div>
 
           {/* Desktop Menu */}
@@ -345,7 +345,7 @@ const TemplateSecondPage = () => {
                 Merancang Kebahagiaan <br/><span className="italic text-emerald-600 font-light">Tanpa Batas.</span>
               </h2>
               <p className="text-stone-600 leading-loose text-lg">
-                Asmara Wedding Planner bukan sekadar organizer. Kami adalah seniman momen. Kami memadukan manajemen acara yang presisi dengan estetika visual yang memukau.
+                Noora Wedding Planner bukan sekadar organizer. Kami adalah seniman momen. Kami memadukan manajemen acara yang presisi dengan estetika visual yang memukau.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -717,7 +717,7 @@ const TemplateSecondPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Putri & Dimas", date: "Jan 2024", text: "Elegan, rapi, dan menenangkan. Tim Asmara membuat hari H kami terasa seperti liburan." },
+              { name: "Putri & Dimas", date: "Jan 2024", text: "Elegan, rapi, dan menenangkan. Tim Noora membuat hari H kami terasa seperti liburan." },
               { name: "Sarah & John", date: "Dec 2023", text: "They truly understand the concept of 'Less is More'. Everything was perfect." },
               { name: "Rina & Bayu", date: "Nov 2023", text: "Sangat profesional. Detail dekorasi hijaunya sangat pas dengan tema garden party kami." },
             ].map((testi, idx) => (
@@ -808,7 +808,7 @@ const TemplateSecondPage = () => {
                     <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-emerald-600 shadow-sm shrink-0">
                       <Mail size={20} />
                     </div>
-                    <p className="font-medium">hello@asmarawedding.com</p>
+                    <p className="font-medium">hello@Noorawedding.com</p>
                   </div>
                 </div>
               </div>
@@ -832,11 +832,11 @@ const TemplateSecondPage = () => {
       {/* --- FOOTER --- */}
       <footer className="bg-emerald-950 text-emerald-100/60 py-16">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-serif font-bold italic text-white mb-6">Asmara<span className="text-amber-400 not-italic">.</span></h2>
+          <h2 className="text-3xl font-serif font-bold italic text-white mb-6">Noora<span className="text-amber-400 not-italic">.</span></h2>
           <p className="mb-10 max-w-md mx-auto text-sm leading-relaxed">Menciptakan momen abadi dengan sentuhan personal yang tak terlupakan.</p>
           
           <div className="border-t border-emerald-900 pt-10 flex flex-col md:flex-row justify-between items-center text-sm">
-            <p>&copy; 2024 Asmara Wedding Planner.</p>
+            <p>&copy; 2024 Noora Wedding Planner.</p>
             <div className="flex space-x-8 mt-4 md:mt-0 font-bold text-white">
               <a href="#" className="hover:text-amber-400 transition-colors">Instagram</a>
               <a href="#" className="hover:text-amber-400 transition-colors">Pinterest</a>

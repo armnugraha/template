@@ -184,7 +184,7 @@ const TemplateFirstPage = () => {
         <div className="container mx-auto px-6 flex justify-between items-center">
           {/* Logo updated to be cleaner */}
           <div className={`text-2xl font-light tracking-[0.2em] uppercase ${scrolled ? 'text-emerald-800' : 'text-emerald-800 md:text-white'}`}>
-            Asmara
+            Noora
           </div>
 
           {/* Desktop Menu */}
@@ -318,13 +318,13 @@ const TemplateFirstPage = () => {
                variants={fadeInUp}
                className="md:w-1/2 space-y-8"
             >
-              <span className="text-amber-500 font-bold uppercase tracking-[0.2em] text-xs">Tentang Asmara</span>
+              <span className="text-amber-500 font-bold uppercase tracking-[0.2em] text-xs">Tentang Noora</span>
               {/* Clean Typography */}
               <h2 className="text-3xl md:text-4xl font-light text-emerald-950 leading-tight">
                 Merancang <span className="italic font-serif text-emerald-700">Kebahagiaan</span> <br/>Tanpa Batas.
               </h2>
               <p className="text-slate-600 leading-loose font-light">
-                Kami percaya bahwa kemewahan sejati terletak pada kesederhanaan yang terencana. Sejak 2014, Asmara Wedding Planner mendedikasikan diri untuk menciptakan momen yang tidak hanya indah dipandang, tetapi juga menyentuh hati.
+                Kami percaya bahwa kemewahan sejati terletak pada kesederhanaan yang terencana. Sejak 2014, Noora Wedding Planner mendedikasikan diri untuk menciptakan momen yang tidak hanya indah dipandang, tetapi juga menyentuh hati.
               </p>
               
               <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -685,7 +685,7 @@ const TemplateFirstPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              { name: "Putri & Dimas", date: "Jan 2024", text: "Elegan, rapi, dan menenangkan. Tim Asmara membuat hari H kami terasa seperti liburan." },
+              { name: "Putri & Dimas", date: "Jan 2024", text: "Elegan, rapi, dan menenangkan. Tim Noora membuat hari H kami terasa seperti liburan." },
               { name: "Sarah & John", date: "Dec 2023", text: "They truly understand the concept of 'Less is More'. Everything was perfect." },
               { name: "Rina & Bayu", date: "Nov 2023", text: "Sangat profesional. Detail dekorasi hijaunya sangat pas dengan tema garden party kami." },
             ].map((testi, idx) => (
@@ -772,7 +772,7 @@ const TemplateFirstPage = () => {
                   </div>
                   <div className="flex items-center space-x-4">
                     <Mail className="shrink-0 text-emerald-600" size={18} />
-                    <p>hello@asmarawedding.com</p>
+                    <p>hello@Noorawedding.com</p>
                   </div>
                 </div>
               </div>
@@ -796,11 +796,11 @@ const TemplateFirstPage = () => {
       {/* --- FOOTER --- */}
       <footer className="bg-emerald-950 text-emerald-100/60 py-16 border-t border-emerald-900/50">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-light tracking-[0.3em] uppercase text-white mb-6">Asmara</h2>
+          <h2 className="text-3xl font-light tracking-[0.3em] uppercase text-white mb-6">Noora</h2>
           <p className="mb-10 max-w-md mx-auto text-xs font-light leading-relaxed tracking-wide">MENCIPTAKAN MOMEN ABADI DENGAN KESEDERHANAAN DAN ELEGANSI.</p>
           
           <div className="border-t border-emerald-900/50 pt-10 flex flex-col md:flex-row justify-between items-center text-xs tracking-wider">
-            <p>&copy; 2024 Asmara Wedding Planner.</p>
+            <p>&copy; 2024 Noora Wedding Planner.</p>
             <div className="flex space-x-8 mt-4 md:mt-0">
               <a href="#" className="hover:text-white transition-colors">Instagram</a>
               <a href="#" className="hover:text-white transition-colors">Pinterest</a>
